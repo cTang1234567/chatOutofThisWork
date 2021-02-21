@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            /* The image used */
+            background-image: url("starsky_home.png");
+
+            /* Full height and opacity*/
+            height: 100%; 
+            opacity: .9;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .w_name {
+            text-align: right;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: auto;
+            width: 50%;
+            font-size: 30px;
+            color: beige;
+        }
+        
+        .sun {
+            width: 150px;
+            height: 150px;
+            background: rgb(255, 208, 0);
+            border-radius: 0 0 150px 0;
+            -moz-border-radius: 0 0 150px 0;
+            -webkit-border-radius: 0 0 150px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .sun_txt {
+            /* CENTER TEXT IN CIRCLE */
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+            text-align: center;
+            
+            /* Font */
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        
+        .planets {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+      .planets div {
+        text-align: center;
+        color: #000000;
+        font-family: arial, sans-serif;
+      }
+        .planet {
+            background: linear-gradient(135deg, #a7cfdf 0%,#23538a 100%);
+            border: 0.1875em solid #0F1C3F;
+            border-radius: 50%;
+            box-shadow: inset -8px -7px 4px 0px rgba(0,0,0,0.3);
+            height: 10em;
+            width: 10em;
+            text-align: center;
+            position: relative;
+            
+        }
+        .planet:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        .planet_txt {
+        /* CENTER TEXT IN CIRCLE */
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+        
+        /* Font */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        }
+
+        #rocket {
+            background: linear-gradient(135deg, #92c266 0%,#27721d 100%);
+        }
+
+        #astro {
+            background: linear-gradient(135deg, #ccb979 0%,#74751f 100%);
+        }
+        #nauts {
+            background: linear-gradient(135deg, #cc8379 0%,#805436 100%);
+        }
+        #mission {
+            background: linear-gradient(135deg, #8b79cc 0%,#4e2e77 100%);
+        }
+    </style>
+    <title>Hello Website</title>
+</head>
+
+<body class = bg>
+    <div class=sun>
+        <div class=sun_txt>Customize Your Rocket!</div>
+    </div>
+    <div class=w_name>Chat Out of This World!<br><br><br></div>
+    <div class=planets>
+        <a href=index.html>
+            <div class=planet  id=rocket>
+                <div class="planet_txt">Rocket Nerds</div>
+            </div>
+        </a>
+        <div class=planet id=astro>
+            <div class="planet_txt">Astrophysics Enthusiasts</div>
+        </div>
+        <div class=planet>
+            <div class="planet_txt">Gamer Gang</div>
+        </div>
+        <div class=planet id=nauts>
+            <div class="planet_txt">Future Astronauts</div>
+        </div>
+        <div class=planet id=mission>
+            <div class="planet_txt">Future Mission Control</div>
+        </div>
+    </div>
+</body>
+</html>
