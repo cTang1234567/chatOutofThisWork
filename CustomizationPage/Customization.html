@@ -94,7 +94,13 @@
 
          <!-- toggling rocket color -->
          <script>
-             var color ="white";
+             var color;
+             rocketColor = () => {
+                 if(sessionStorage.length > 0)
+                    color = sessionStorage.getItem('rocketcolor');
+                else
+                    color = "white";
+             }
              rocketRed = () => {
                var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
                var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red_highlighted.png?raw=true";
@@ -284,7 +290,7 @@
 
         </div>
 
-        <button class = "done_button" onclick="window.location.href = '../home.html'">Done!</button>
+        <button class = "done_button" onclick="sessionStorage.setItem('rocketColor', color); window.location.href = '../home.html'">Done!</button>
         <!--add final rocket color function-->
 
     </body>
