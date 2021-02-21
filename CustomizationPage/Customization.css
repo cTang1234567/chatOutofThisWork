@@ -1,0 +1,32 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #0c164f;
+}
+
+.picture_selection{
+    float:left;
+    display: inline;
+    padding-left: 1%;
+}
+
+.rocket_customization{
+    float:right;
+    display: inline;
+    padding-right: 1%;
+}
+
+.profile_picture{
+    max-width: 10vw;
+    height: auto;
+    padding: 3%;
+    padding-right: 7%;
+}
+
+.colorsquare{
+    max-width: 10vw;
+    height: auto;
+    padding: 2%;
+}
