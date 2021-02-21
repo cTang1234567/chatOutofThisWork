@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <div>
+
         <div class = "picture_selection">
             <h1>
                 Select a profile picture
@@ -17,23 +17,38 @@
 
             <div class = "image_row">
                 <div class = "image_column">
-                    <img class = "profile_picture" src="assets/profile pictures/dark_blue_planet.png" onclick="this.src='assets/profile pictures/dark_blue_planet_highlighted.png'"> 
-                    <img class = "profile_picture" src="assets/profile pictures/saturn.png">
+
+                    <script>
+                        toggleDarkBlue = () => {
+                           var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profile%20pictures/dark_blue_planet.png?raw=true";
+                           var img2 = "assets/profilePictures/dark_blue_planet_highlighted.png";
+                           
+                           var imgElement = document.getElementById("toggleDarkBlue");
+                            
+                           console.log(imgElement.src === "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profile%20pictures/blue_planet.png?raw=true");
+                           //console.log((imgElement.src == img1)? img1 : img2);
+                           imgElement.src = (imgElement.src === img1)? img2 : img1;
+                        }
+
+                     </script>
+                    
+                    <img class = "profile_picture" src= "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profile%20pictures/dark_blue_planet.png?raw=true" id="toggleDarkBlue" onclick= "toggleDarkBlue()"/> 
+                    <img class = "profile_picture" src="assets/profilePictures/saturn.png" onclick="this.src='assets/profilePictures/saturn_highlighted.png'">
                 </div>
                 <div class = "image_column">
-                    <img class = "profile_picture" src = "assets/profile pictures/lasagna_planet.png">
-                    <img class = "profile_picture" src = "assets/profile pictures/earth.png">
+                    <img class = "profile_picture" src = "assets/profilePictures/lasagna_planet.png">
+                    <img class = "profile_picture" src = "assets/profilePictures/earth.png">
                 </div>
                 <div class = "image_column">
-                    <img class = "profile_picture" src = "assets/profile pictures/blue_planet.png">
-                    <img class = "profile_picture" src = "assets/profile pictures/red_planet.png">
+                    <img class = "profile_picture" src = "assets/profilePictures/blue_planet.png">
+                    <img class = "profile_picture" src = "assets/profilePictures/red_planet.png">
                 </div>
             </div>
 
         </div>
 
         <div>
-            <img class = "rocket_image" src = "assets/rocket pictures/unpainted.png">
+            <img class = "rocket_image" src = "assets/rocketPictures/unpainted.png">
         </div>
 
         <div class = "rocket_customization">
@@ -43,21 +58,20 @@
 
             <div class = "image_row">
                 <div class = "image_column">
-                    <img class = "colorsquare" src = "assets/color squares/red.png">
-                    <img class = "colorsquare" src = "assets/color squares/orange.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/red.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/orange.png">
                 </div>
                 <div class = "image_column">
-                    <img class = "colorsquare" src = "assets/color squares/yellow.png">
-                    <img class = "colorsquare" src = "assets/color squares/green.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/yellow.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/green.png">
                 </div>
                 <div class = "image_column">
-                    <img class = "colorsquare" src = "assets/color squares/lightblue.png">
-                    <img class = "colorsquare" src = "assets/color squares/darkblue.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/lightblue.png">
+                    <img class = "colorsquare" src = "assets/colorSquares/darkblue.png">
                 </div>
             </div>
 
         </div>
-    </div>
 
     </body>
 
