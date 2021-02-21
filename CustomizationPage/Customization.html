@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+
+     <link href = "Customization.css" type = "text/css" rel = "stylesheet">
+     <link type="text/css" href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+
+     <title>Customization</title>
+    </head>
+    
+    <body>
+
+        <!-- toggling planet colors -->
+        <script>
+                        
+            toggleDarkBlue = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               var img2 = "assets/profilePictures/dark_blue_planet_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleDarkBlue");  
+               document.getElementById("toggleSaturn").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               document.getElementById("toggleLasagna").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               document.getElementById("toggleEarth").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               document.getElementById("toggleBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";
+               document.getElementById("toggleRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+            toggleSaturn = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               var img2 = "assets/profilePictures/saturn_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleSaturn");
+               document.getElementById("toggleDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               document.getElementById("toggleLasagna").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               document.getElementById("toggleEarth").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               document.getElementById("toggleBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";
+               document.getElementById("toggleRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";                            
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+            toggleLasagna = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               var img2 = "assets/profilePictures/lasagna_planet_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleLasagna");  
+               document.getElementById("toggleDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               document.getElementById("toggleSaturn").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               document.getElementById("toggleEarth").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               document.getElementById("toggleBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";
+               document.getElementById("toggleRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";                              
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+            toggleEarth = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               var img2 = "assets/profilePictures/earth_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleEarth");   
+               document.getElementById("toggleDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               document.getElementById("toggleSaturn").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               document.getElementById("toggleLasagna").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               document.getElementById("toggleBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";
+               document.getElementById("toggleRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";                              
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+            toggleBlue = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";
+               var img2 = "assets/profilePictures/blue_planet_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleBlue");  
+               document.getElementById("toggleDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               document.getElementById("toggleSaturn").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               document.getElementById("toggleLasagna").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               document.getElementById("toggleEarth").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               document.getElementById("toggleRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";                             
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+            toggleRed = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true";
+               var img2 = "assets/profilePictures/red_planet_highlighted.png";
+               
+               var imgElement = document.getElementById("toggleRed");   
+               document.getElementById("toggleDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true";
+               document.getElementById("toggleSaturn").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true";
+               document.getElementById("toggleLasagna").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true";
+               document.getElementById("toggleEarth").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true";
+               document.getElementById("toggleBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true";                            
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+            }
+
+         </script>
+
+         <script>
+             rocketRed = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketRed");  
+
+               document.getElementById("rocketOrange").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               document.getElementById("rocketYellow").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               document.getElementById("rocketGreen").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               document.getElementById("rocketLightBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+               document.getElementById("rocketDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/red.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+
+            rocketOrange = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketOrange");  
+
+               document.getElementById("rocketRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               document.getElementById("rocketYellow").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               document.getElementById("rocketGreen").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               document.getElementById("rocketLightBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+               document.getElementById("rocketDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/orange.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+
+            rocketYellow = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketYellow");  
+
+               document.getElementById("rocketRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               document.getElementById("rocketOrange").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               document.getElementById("rocketGreen").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               document.getElementById("rocketLightBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+               document.getElementById("rocketDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/yellow.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+
+            rocketGreen = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketGreen");  
+
+               document.getElementById("rocketRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               document.getElementById("rocketOrange").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               document.getElementById("rocketYellow").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               document.getElementById("rocketLightBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+               document.getElementById("rocketDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/green.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+
+            rocketLightBlue = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketLightBlue");  
+
+               document.getElementById("rocketRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               document.getElementById("rocketOrange").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               document.getElementById("rocketYellow").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               document.getElementById("rocketGreen").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               document.getElementById("rocketDarkBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/lightblue.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+
+            rocketDarkBlue = () => {
+               var img1 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true";
+               var img2 = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue_highlighted.png?raw=true";
+               
+               var imgElement = document.getElementById("rocketDarkBlue");  
+
+               document.getElementById("rocketRed").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true";
+               document.getElementById("rocketOrange").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true";
+               document.getElementById("rocketYellow").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true";
+               document.getElementById("rocketGreen").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true";
+               document.getElementById("rocketLightBlue").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true";
+
+               imgElement.src = (imgElement.src === img1)? img2 : img1;
+               if(imgElement.src === img2){
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/darkblue.png?raw=true";
+               }
+               else{
+                document.getElementById("rocketID").src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/rocketPictures/unpainted.png?raw=true"; 
+               }
+            }
+         </script>
+
+        <div class = "picture_selection">
+            <h1>
+                Select a profile picture
+            </h1>
+
+            <div class = "image_row">
+                <div class = "image_column">
+                    <img class = "profile_picture" src= "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/dark_blue_planet.png?raw=true" id="toggleDarkBlue" onclick= "toggleDarkBlue()"/> 
+                    <img class = "profile_picture" src="https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/saturn.png?raw=true" id = "toggleSaturn" onclick= "toggleSaturn()"/>
+                </div>
+                <div class = "image_column">
+                    <img class = "profile_picture" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/lasagna_planet.png?raw=true" id = "toggleLasagna" onclick = "toggleLasagna()"/>
+                    <img class = "profile_picture" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/earth.png?raw=true" id = "toggleEarth" onclick = "toggleEarth()" />
+                </div>
+                <div class = "image_column">
+                    <img class = "profile_picture" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/blue_planet.png?raw=true" id = "toggleBlue" onclick = "toggleBlue()" />
+                    <img class = "profile_picture" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/profilePictures/red_planet.png?raw=true" id = "toggleRed" onclick = "toggleRed()" />
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <img class = "rocket_image" src = "assets/rocketPictures/unpainted.png" id = "rocketID">
+        </div>
+
+        <div class = "rocket_customization">
+            <h1>
+                Select a color
+            </h1>
+
+            <div class = "image_row">
+                <div class = "image_column">
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/red.png?raw=true" id = "rocketRed" onclick = "rocketRed()"/>
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/orange.png?raw=true" id = "rocketOrange" onclick = "rocketOrange()">
+                </div>
+                <div class = "image_column">
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/yellow.png?raw=true" id = "rocketYellow" onclick = "rocketYellow()">
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/green.png?raw=true" id = "rocketGreen" onclick = "rocketGreen()">
+                </div>
+                <div class = "image_column">
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/lightblue.png?raw=true" id = "rocketLightBlue" onclick = "rocketLightBlue()">
+                    <img class = "colorsquare" src = "https://github.com/cTang1234567/chatOutofThisWorld/blob/main/CustomizationPage/assets/colorSquares/darkblue.png?raw=true" id = "rocketDarkBlue" onclick = "rocketDarkBlue()">
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

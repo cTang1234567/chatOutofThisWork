@@ -30,11 +30,18 @@
             width: 150px;
             height: 150px;
             background: rgb(255, 208, 0);
+            border: 0.1875em solid #da9227;
+            border-radius: 50%;
             border-radius: 0 0 150px 0;
             -moz-border-radius: 0 0 150px 0;
             -webkit-border-radius: 0 0 150px 0;
             text-align: center;
             position: relative;
+            transition: border-width 0.6s linear;
+        }
+        
+        .sun:hover {
+            border-width: 10px;
         }
 
         .sun_txt {
@@ -70,7 +77,10 @@
             width: 10em;
             text-align: center;
             position: relative;
-            
+            transition: border-width 0.6s linear;
+        }
+        .planet:hover {
+            border-width: 10px;
         }
         .planet:after {
             content: "";
@@ -107,9 +117,11 @@
 </head>
 
 <body class = bg>
-    <div class=sun>
-        <div class=sun_txt>Customize Your Rocket!</div>
-    </div>
+    <a href=CustomizationPage/Customization.html>
+        <div class=sun>
+            <div class=sun_txt>Customize Your Rocket!</div>
+        </div>
+    </a>
     <div class=w_name>Chat Out of This World!<br><br><br></div>
     <div class=planets>
         <a href=index.html>
@@ -137,5 +149,29 @@
             </div>
         </a>
     </div>
+    <br><br><br><br>
+    <audio id="cs_audio" controls>
+        <source src="chill_lofi.mp3" type="audio/mpeg">
+      </audio>
+      <div style="text-align: center;">
+      <div id="cs_audioplayer">
+           <span style="position: relative;left: 0;float: left;font-size: 0.87em;"><span id="cs_audio_current_time">0:0</span></span>
+           <span id="cs_play_pause_btn" style="position: relative;">
+               <i class="far fa-play-circle" id="cs_audio_play"></i>
+               <i class="far fa-pause-circle" id="cs_audio_pause"></i>
+           </span>
+           <span id="cs_audio_sound" style="position: relative;right: 5px;float: right;margin-left: 15px;top: -2px;">
+               <i style="vertical-align: middle;font-size: 1.14em;" class="fas fa-volume-down"></i>
+               <div class="cs_volBar" style="height: 6px; width: 65px;background-color: #ccc;display: inline-block;cursor: pointer;">
+                 <div class="cs_volume" style="height: 6px;width: 28px;background-color: red;position: absolute;"></div>
+               </div>
+           </span>
+           <span id="cs_audio_duration" style="position: relative;right: 0;float: right;padding-left: 10px;font-size: 0.87em;"></span>
+           <div class="cs_audio_bar">
+               <div class="cs_audio_bar_now"></div>
+               <div class="cs_audio_bar_loaded"></div>
+           </div>
+      </div>
+      </div>
 </body>
 </html>
