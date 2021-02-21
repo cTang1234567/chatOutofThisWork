@@ -30,11 +30,18 @@
             width: 150px;
             height: 150px;
             background: rgb(255, 208, 0);
+            border: 0.1875em solid #da9227;
+            border-radius: 50%;
             border-radius: 0 0 150px 0;
             -moz-border-radius: 0 0 150px 0;
             -webkit-border-radius: 0 0 150px 0;
             text-align: center;
             position: relative;
+            transition: border-width 0.6s linear;
+        }
+        
+        .sun:hover {
+            border-width: 10px;
         }
 
         .sun_txt {
@@ -70,7 +77,10 @@
             width: 10em;
             text-align: center;
             position: relative;
-            
+            transition: border-width 0.6s linear;
+        }
+        .planet:hover {
+            border-width: 10px;
         }
         .planet:after {
             content: "";
@@ -107,9 +117,11 @@
 </head>
 
 <body class = bg>
-    <div class=sun>
-        <div class=sun_txt>Customize Your Rocket!</div>
-    </div>
+    <a href=index.html>
+        <div class=sun>
+            <div class=sun_txt>Customize Your Rocket!</div>
+        </div>
+    </a>
     <div class=w_name>Chat Out of This World!<br><br><br></div>
     <div class=planets>
         <a href=index.html>
