@@ -10,6 +10,31 @@ body{
 h1{
     color: #fff;
 }
+
+.done_button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 35px;
+    font-family: inherit;
+    position:absolute;
+    right: 47%;
+    top: 89%;
+    cursor:pointer;
+    transition-duration: 0.4s;
+  }
+
+  .done_button:hover{
+      background-color: #28702b;
+      cursor:pointer;
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+  }
+
+
 .picture_selection{
     float:left;
     display: inline;
@@ -50,6 +75,7 @@ h1{
     height: auto;
     position: relative; 
     padding: 0.5vw;
+    cursor: pointer;
 }
 
 .image_column {
